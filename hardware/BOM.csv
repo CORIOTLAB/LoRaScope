@@ -1,0 +1,17 @@
+item,part_number,qty,description,category,source,status
+1,4119589,1,LEGO Technic element (as labelled in Fig. 1 of the article),structure,Article Fig. 1,verify description
+2,6080356,4,LEGO Technic element (as labelled in Fig. 1 of the article),structure,Article Fig. 1,verify description
+3,4225033,2,LEGO Technic element (as labelled in Fig. 1 of the article),structure,Article Fig. 1,verify description
+4,278026,16,LEGO Technic element (as labelled in Fig. 1 of the article),structure,Article Fig. 1,verify description
+5,4210757,2,LEGO Technic element (as labelled in Fig. 1 of the article),structure,Article Fig. 1,verify description
+6,U056,1,M5Stack Unit Accel (ADXL345 three-axis accelerometer; I2C),orientation,Article Fig. 1 and Table 1,confirmed
+7,Battery_base,1,3D-printed adapter for the power module and battery (hardware/cad),3D-printed,This repository,confirmed
+8,K063_base,1,3D-printed adapter for the LoRaWAN communication base (hardware/cad),3D-printed,This repository,confirmed
+9,K063,1,M5Stack Atom DTU LoRaWAN base (RAK3172; hosts the AtomS3),communication,Article Fig. 1 and Table 1,verify SKU
+10,U190,1,M5Stack Unit GPS SMA (ATGM336H module; UART),positioning,Article Fig. 1 and Table 1,confirmed
+11,ELT0316,1,Item labelled ELT0316 in Fig. 1 (external GNSS antenna assembly),positioning,Article Fig. 1,verify description
+12,Antenna,1,915 MHz SMA antenna supplied with the M5Stack LoRaWAN kit,communication,Article Fig. 1 and Table 1,confirmed
+-,AtomS3,1,M5Stack AtomS3 (ESP32-S3 with integrated display),processing,Article Table 1,not drawn in Fig. 1 list; verify SKU
+-,SK530,1,SK530 external GNSS antenna used in the mobile campaigns,positioning,Article Table 1,verify against item 11
+-,PM1S-16340,1,Charging and step-up module with USB output,power,Article Table 1,verify supplier
+-,16340 cell,1,Rechargeable 16340 Li-ion cell 3.7 V 1000 mAh nominal,power,Article Table 1,verify datasheet capacity

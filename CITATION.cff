@@ -1,0 +1,70 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the article and this software/dataset release."
+title: "LoRaScope: open hardware, firmware and datasets for joint LoRaWAN coverage mapping and GNSS positioning-quality assessment"
+type: software
+version: "0.1.0"
+date-released: "2026-11-09"
+license: MIT
+abstract: >-
+  Firmware, payload decoder, 3D-printable parts, field-campaign datasets and figure scripts
+  accompanying the LoRaScope article. LoRaScope is a portable, modular instrument that transmits
+  the GNSS solution, positioning-quality indicators and device orientation in every LoRaWAN uplink.
+keywords:
+  - LoRaWAN
+  - GNSS
+  - open hardware
+  - coverage mapping
+  - positioning quality
+  - field measurement
+authors:
+  - family-names: Botero-Valencia
+    given-names: Juan
+    orcid: "https://orcid.org/0000-0001-7720-8828"
+    affiliation: "Institución Universitaria ITM, Medellín, Colombia"
+  - family-names: Morales-Guerra
+    given-names: Juan
+    orcid: "https://orcid.org/0000-0002-4149-8656"
+    affiliation: "Institución Universitaria ITM, Medellín, Colombia"
+  - family-names: Cano-Molina
+    given-names: Santiago
+    orcid: "https://orcid.org/0009-0006-9149-0800"
+    affiliation: "Institución Universitaria ITM, Medellín, Colombia"
+  - family-names: Hernández-Palacio
+    given-names: Lucas
+    orcid: "https://orcid.org/0009-0005-0497-7139"
+    affiliation: "Institución Universitaria ITM, Medellín, Colombia"
+  - family-names: Hernández-García
+    given-names: Ruber
+    orcid: "https://orcid.org/0000-0002-9311-1193"
+    affiliation: "Universidad Católica del Maule, Talca, Chile"
+  - family-names: Gutiérrez-Calderon
+    given-names: Sebastián
+    orcid: "https://orcid.org/0000-0002-9622-4521"
+    affiliation: "Tecnun, University of Navarra, San Sebastián, Spain"
+  - family-names: Del-Valle-Soto
+    given-names: Carolina
+    orcid: "https://orcid.org/0000-0002-0272-3275"
+    affiliation: "Universidad Panamericana, Zapopan, Mexico"
+preferred-citation:
+  type: article
+  title: "LoRaScope: An Open Modular Hardware Platform for Joint LoRaWAN Coverage Mapping and GNSS Positioning Quality Assessment"
+  journal: "Applied Sciences"
+  publisher:
+    name: "MDPI"
+  year: 2026
+  status: in-preparation
+  authors:
+    - family-names: Botero-Valencia
+      given-names: Juan
+    - family-names: Morales-Guerra
+      given-names: Juan
+    - family-names: Cano-Molina
+      given-names: Santiago
+    - family-names: Hernández-Palacio
+      given-names: Lucas
+    - family-names: Hernández-García
+      given-names: Ruber
+    - family-names: Gutiérrez-Calderon
+      given-names: Sebastián
+    - family-names: Del-Valle-Soto
+      given-names: Carolina

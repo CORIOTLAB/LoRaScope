@@ -1,0 +1,28 @@
+# --- Secrets: never commit LoRaWAN credentials -------------------------------
+firmware/**/A152_CONFIG.h
+*.pem
+*.key
+.env
+.env.*
+
+# --- Generated files ---------------------------------------------------------
+analysis/output/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+node_modules/
+
+# --- Build artefacts ---------------------------------------------------------
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# --- Editors and OS ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    name: Data and decoder checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python dependencies
+        run: pip install numpy pandas
+      - name: Dataset integrity
+        run: python tools/check_data.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Decoder round-trip
+        run: node tests/decoder.test.js
+
+      - name: No credentials committed
+        run: |
+          if git ls-files | grep -E 'A152_CONFIG\.h$'; then
+            echo "A152_CONFIG.h must not be committed"; exit 1
+          fi
+          if grep -rIEn '"[0-9A-Fa-f]{32}"' firmware --include='*.h' --include='*.ino' | grep -v '"00000000000000000000000000000000"'; then
+            echo "Possible AppKey found"; exit 1
+          fi

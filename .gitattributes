@@ -1,0 +1,13 @@
+# Normalise line endings so Windows and Linux checkouts are identical
+* text=auto eol=lf
+
+*.ps1 text eol=crlf
+
+# Binary design files
+*.stl binary
+*.png binary
+*.jpg binary
+
+# Large text-based CAD: do not diff or count as repository language
+*.step -diff linguist-generated=true
+*.csv linguist-detectable=false
