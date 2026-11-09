@@ -68,7 +68,8 @@ than 12 frames; the largest gap is 123 frames (about 10.25 min at 5 s) in campai
 ## Limitations to keep in mind
 
 - Only **received** uplinks are present; RSSI and SNR distributions are censored where packets were not decoded.
-- The files carry no timestamps; campaign dates, duration and mode of travel are described in the article.
+- The files carry no timestamps. Campaign dates and durations are not reported because the analyses do not depend on time of day; GNSS visibility should be read as campaign-specific.
+- Each campaign file contains the reception metadata of its zone gateway only (GW-CR or GW-FR).
 - No Galileo satellites were reported, although the receiver is specified for Galileo.
 - The antenna-comparison and energy-consumption measurements of the article are **not** included in this release.
 - SNR values are compressed near +15 dB.
