@@ -73,12 +73,6 @@ than 12 frames; the largest gap is 123 frames (about 10.25 min at 5 s) in campai
 - The antenna-comparison and energy-consumption measurements of the article are **not** included in this release.
 - SNR values are compressed near +15 dB.
 
-## Check the files
-
-```bash
-python tools/check_data.py
-```
-
 ## License
 
 <p align="justify">

@@ -6,7 +6,6 @@ firmware/**/A152_CONFIG.h
 .env.*
 
 # --- Generated files ---------------------------------------------------------
-analysis/output/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/

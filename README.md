@@ -4,7 +4,7 @@
 
 **An open, modular hardware platform for joint LoRaWAN coverage mapping and GNSS positioning-quality assessment**
 
-[![CI](https://github.com/OWNER/LoRaScope/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/LoRaScope/actions/workflows/ci.yml)
+[![CI](https://github.com/CORIOTLAB/LoRaScope/actions/workflows/ci.yml/badge.svg)](https://github.com/CORIOTLAB/LoRaScope/actions/workflows/ci.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSES/MIT.txt)
 [![Hardware: CERN-OHL-P-2.0](https://img.shields.io/badge/hardware-CERN--OHL--P--2.0-green.svg)](LICENSES/CERN-OHL-P-2.0.txt)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSES/CC-BY-4.0.txt)
@@ -18,7 +18,7 @@ This repository is the open-science companion of the article
 > J. Botero-Valencia, J. Morales-Guerra, S. Cano-Molina, L. Hernández-Palacio, R. Hernández-García, S. Gutiérrez-Calderon and C. Del-Valle-Soto, "LoRaScope: An Open Modular Hardware Platform for Joint LoRaWAN Coverage Mapping and GNSS Positioning Quality Assessment", *Applied Sciences* (MDPI), 2026. *Manuscript in preparation; the DOI will be added on publication.*
 
 <p align="justify">
-It contains everything needed to inspect, reproduce and extend the work: the firmware and network-server payload decoder, the 3D-printable parts, the six field-campaign datasets, and the scripts that generate the geographic figures of the article.
+It contains everything needed to inspect, reproduce and extend the work: the firmware and network-server payload decoder, the 3D-printable parts, and the six field-campaign datasets.
 </p>
 
 ![Exploded view of the LoRaScope assembly](docs/images/lorascope_exploded_view.png)
@@ -65,10 +65,8 @@ LoRaScope/
 ├── hardware/           3D-printed parts (STEP and STL) and bill of materials
 ├── firmware/           Arduino sketch, CORIOT_* libraries and ChirpStack payload decoder
 ├── data/campaigns/     Six field-campaign datasets (CSV) and their data dictionary
-├── analysis/           Scripts that regenerate the maps and GNSS figures
 ├── docs/               20-byte frame specification and figures used in this README
 ├── tests/              Decoder round-trip test against the datasets
-├── tools/              Dataset integrity check and publication helper
 └── LICENSES/           Full license texts (MIT, CERN-OHL-P-2.0, CC-BY-4.0)
 ```
 
@@ -90,28 +88,14 @@ LoRaScope/
 <b>4. Explore the data.</b> See <a href="data/README.md"><code>data/README.md</code></a>.
 </p>
 
-<p align="justify">
-<b>5. Regenerate the figures.</b>
-</p>
-
-```bash
-pip install -r analysis/requirements.txt
-python analysis/regenerate_maps.py
-```
-
-<p align="justify">
-Outputs are written to <code>analysis/output/</code>. Esri basemap tiles are downloaded on first use; without internet access the maps are drawn without the basemap. See <a href="analysis/README.md"><code>analysis/README.md</code></a>.
-</p>
-
 ## Verify the repository
 
 ```bash
-python tools/check_data.py        # dataset integrity and numbers quoted in the article
 node tests/decoder.test.js        # encodes all 1771 records and decodes them back
 ```
 
 <p align="justify">
-Both checks run automatically on every push through GitHub Actions.
+This check runs automatically on every push through GitHub Actions.
 </p>
 
 ## Security note
@@ -130,7 +114,7 @@ Please cite the article and, where relevant, the dataset and firmware release. M
 
 | Content | License |
 | --- | --- |
-| Firmware, decoder, scripts and tests | [MIT](LICENSES/MIT.txt) |
+| Firmware, decoder and tests | [MIT](LICENSES/MIT.txt) |
 | Hardware design files (STEP, STL, bill of materials) | [CERN-OHL-P-2.0](LICENSES/CERN-OHL-P-2.0.txt) |
 | Datasets and documentation | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
 

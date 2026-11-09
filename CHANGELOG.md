@@ -9,5 +9,4 @@ All notable changes to this repository are documented here. The format follows
 - Firmware sketch, `CORIOT_*` libraries and ChirpStack payload decoder (payload version 2).
 - STEP and STL files of the two 3D-printed adapters (`Battery_base`, `K063_base`).
 - Six campaign datasets with a data dictionary.
-- Scripts to regenerate the maps and GNSS figures of the article.
-- Dataset integrity check and decoder round-trip test, run by GitHub Actions.
+- Decoder round-trip test, run by GitHub Actions.

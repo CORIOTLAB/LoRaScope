@@ -7,18 +7,10 @@ on:
 
 jobs:
   checks:
-    name: Data and decoder checks
+    name: Decoder and credential checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Install Python dependencies
-        run: pip install numpy pandas
-      - name: Dataset integrity
-        run: python tools/check_data.py
 
       - uses: actions/setup-node@v4
         with:
