@@ -1,8 +1,10 @@
 # Firmware
 
+<p align="justify">
 Arduino firmware for the M5Stack AtomS3 that reads a GNSS receiver and an ADXL345
 accelerometer, packs the data into the 20-byte LoRaScope frame and transmits it
 through the RAK3172 (A152) LoRaWAN module.
+</p>
 
 ```
 firmware/
@@ -31,7 +33,9 @@ firmware/
 
 ## Configuration
 
-Defined in `A152_CONFIG.h` unless stated otherwise.
+<p align="justify">
+Defined in <code>A152_CONFIG.h</code> unless stated otherwise.
+</p>
 
 | Setting | Default | Meaning |
 | --- | --- | --- |
@@ -44,19 +48,25 @@ Defined in `A152_CONFIG.h` unless stated otherwise.
 | `LW_TX_POWER` (sketch) | `0` | Regional transmit-power index 0 (MaxEIRP 30 dBm in AU915; not a measured EIRP) |
 | `GNSS_SOURCE` | `GNSS_SRC_ATGM` | `GNSS_SRC_SIM` (simulated NMEA), `GNSS_SRC_M10` (u-blox M10) or `GNSS_SRC_ATGM` (ATGM336H) |
 
+<p align="justify">
 Pin assignment for the AtomS3: GNSS UART RX 1 / TX 2 at 115200 baud; RAK3172 UART RX 6 / TX 5; ADXL345 I²C SDA 38 / SCL 39 at 400 kHz.
+</p>
 
+<p align="justify">
 The sketch transmits only when a valid 2D or 3D GNSS epoch is available. The button on
 the AtomS3 forces an immediate uplink.
+</p>
 
 ## Payload decoder
 
-[`decoder/decoder.js`](decoder/decoder.js) implements `decodeUplink()` for ChirpStack
+<p align="justify">
+<a href="decoder/decoder.js"><code>decoder/decoder.js</code></a> implements <code>decodeUplink()</code> for ChirpStack
 (and any server that uses the same codec interface). It accepts exactly 20 bytes with
-frame version 2 and returns `GPSV, BDSV, GLOV, GALV, SATU, SATX, FIXT, PDOP, HDOP,
-VDOP, LATI, LONG, ALTI, PITC, ROLL, VERS, TXPW`. The bit layout is documented in
-[`docs/payload-format.md`](../docs/payload-format.md) and tested against every record of the
-campaign datasets (`node tests/decoder.test.js`).
+frame version 2 and returns <code>GPSV, BDSV, GLOV, GALV, SATU, SATX, FIXT, PDOP, HDOP,
+VDOP, LATI, LONG, ALTI, PITC, ROLL, VERS, TXPW</code>. The bit layout is documented in
+<a href="../docs/payload-format.md"><code>docs/payload-format.md</code></a> and tested against every record of the
+campaign datasets (<code>node tests/decoder.test.js</code>).
+</p>
 
 ## Notes
 
@@ -65,4 +75,6 @@ campaign datasets (`node tests/decoder.test.js`).
 
 ## License
 
-MIT, see [`LICENSES/MIT.txt`](../LICENSES/MIT.txt). Third-party libraries (M5Unified, M5-LoRaWAN-RAK) keep their own licenses.
+<p align="justify">
+MIT, see <a href="../LICENSES/MIT.txt"><code>LICENSES/MIT.txt</code></a>. Third-party libraries (M5Unified, M5-LoRaWAN-RAK) keep their own licenses.
+</p>

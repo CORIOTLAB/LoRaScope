@@ -1,9 +1,11 @@
 # Campaign datasets
 
+<p align="justify">
 Six mobile LoRaWAN/GNSS campaigns recorded in Medellín, Colombia, three in the
-coverage area of each gateway. Each row is **one uplink received by a gateway**:
+coverage area of each gateway. Each row is <b>one uplink received by a gateway</b>:
 the decoded 20-byte LoRaScope frame joined with the reception metadata of the
 gateway. These are the exact files used for every number and map of the article.
+</p>
 
 | File | Zone | Gateway | Records | Attempts inferred | PDR (%) | Path (km) |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
@@ -15,10 +17,12 @@ gateway. These are the exact files used for every number and map of the article.
 | `dataset_fraternidad_3.csv` | Fraternidad | GW-FR | 464 | 502 | 92.4 | 13.8 |
 | **Total** | | | **1771** | **2813** | **63.0** | **67.6** |
 
-Gateways: **GW-CR** `2cf7f11162900005` at 6.22427° N, 75.57398° W (about 30 m above
-ground, south facade, 3 dBi antenna); **GW-FR** `787264fffee04f72` at 6.24482° N,
+<p align="justify">
+Gateways: <b>GW-CR</b> <code>2cf7f11162900005</code> at 6.22427° N, 75.57398° W (about 30 m above
+ground, south facade, 3 dBi antenna); <b>GW-FR</b> <code>787264fffee04f72</code> at 6.24482° N,
 75.55130° W (about 20 m, rooftop, 5 dBi antenna). Network: AU915, sub-band 2, SF7
 (DR5), transmit-power index 0, ADR disabled, 5 s reporting interval, unconfirmed uplinks.
+</p>
 
 ## Data dictionary
 
@@ -45,17 +49,21 @@ ground, south facade, 3 dBi antenna); **GW-FR** `787264fffee04f72` at 6.24482° 
 | `x_utm_m`, `y_utm_m` | m | Easting and northing of (`LATI`, `LONG`) in UTM zone 18N (EPSG:32618) |
 | `gateway_distance_m` | m | Planar distance between the record and the gateway in UTM coordinates |
 
-`x_utm_m`, `y_utm_m` and `gateway_distance_m` were verified against an independent
+<p align="justify">
+<code>x_utm_m</code>, <code>y_utm_m</code> and <code>gateway_distance_m</code> were verified against an independent
 WGS-84 → EPSG:32618 transformation (maximum difference 0.5 mm, i.e. rounding).
+</p>
 
 ## How packet delivery ratio is obtained
 
-Rows are in increasing `fcnt_rel` order. Missing counter values between two received
+<p align="justify">
+Rows are in increasing <code>fcnt_rel</code> order. Missing counter values between two received
 rows are lost uplinks, so PDR = received / (received + lost) computed from bounded gaps.
 Attempts before the first or after the last received uplink cannot be inferred, which
 makes PDR an upper bound. Of the 1042 missing frames, 764 (73.3 %) lie in gaps longer
 than 12 frames; the largest gap is 123 frames (about 10.25 min at 5 s) in campaign
-`ciudad_del_rio_3`. The article draws interpolated positions only for gaps of up to 12 frames.
+<code>ciudad_del_rio_3</code>. The article draws interpolated positions only for gaps of up to 12 frames.
+</p>
 
 ## Limitations to keep in mind
 
@@ -73,4 +81,6 @@ python tools/check_data.py
 
 ## License
 
-[CC BY 4.0](../LICENSES/CC-BY-4.0.txt). Please cite the article when you reuse the data.
+<p align="justify">
+<a href="../LICENSES/CC-BY-4.0.txt">CC BY 4.0</a>. Please cite the article when you reuse the data.
+</p>

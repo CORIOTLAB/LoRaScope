@@ -1,12 +1,16 @@
 # Hardware
 
+<p align="justify">
 LoRaScope is assembled from commercial modules on a reconfigurable LEGO® Technic
 frame. Only two parts are custom: 3D-printed adapters that hold the electronics.
+</p>
 
 ![Exploded view](../docs/images/lorascope_exploded_view.png)
 
-*Exploded view of the assembly (Fig. 1 of the article). Numbers refer to the `item`
-column of [`BOM.csv`](BOM.csv).*
+<p align="justify">
+<i>Exploded view of the assembly (Fig. 1 of the article). Numbers refer to the <code>item</code>
+column of <a href="BOM.csv"><code>BOM.csv</code></a>.</i>
+</p>
 
 ## 3D-printed parts
 
@@ -21,9 +25,11 @@ column of [`BOM.csv`](BOM.csv).*
 
 ## Bill of materials
 
-[`BOM.csv`](BOM.csv) lists the 12 items of the exploded view plus the components of
-Table 1 of the article that are not drawn. The `status` column marks entries that
+<p align="justify">
+<a href="BOM.csv"><code>BOM.csv</code></a> lists the 12 items of the exploded view plus the components of
+Table 1 of the article that are not drawn. The <code>status</code> column marks entries that
 the authors must still confirm (SKU, supplier or description).
+</p>
 
 ## Assembly notes
 
@@ -34,6 +40,8 @@ the authors must still confirm (SKU, supplier or description).
 
 ## License
 
+<p align="justify">
 Design files and the bill of materials are released under
-[CERN-OHL-P-2.0](../LICENSES/CERN-OHL-P-2.0.txt). LEGO® is a trademark of the LEGO
+<a href="../LICENSES/CERN-OHL-P-2.0.txt">CERN-OHL-P-2.0</a>. LEGO® is a trademark of the LEGO
 Group, which does not sponsor or endorse this project.
+</p>
