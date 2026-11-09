@@ -15,7 +15,7 @@
 This repository is the open-science companion of the article
 </p>
 
-> J. Botero-Valencia, J. Morales-Guerra, S. Cano-Molina, L. Hernández-Palacio, R. Hernández-García, S. Gutiérrez-Calderon and C. Del-Valle-Soto, "LoRaScope: An Open Modular Hardware Platform for Joint LoRaWAN Coverage Mapping and GNSS Positioning Quality Assessment", *Applied Sciences* (MDPI), 2026. *Manuscript in preparation; the DOI will be added on publication.*
+> J. Botero-Valencia, J. Morales-Guerra, S. Cano-Molina, L. Hernández-Palacio, R. Hernández-García, S. Gutiérrez and C. Del-Valle-Soto, "LoRaScope: An Open Modular Hardware Platform for Joint LoRaWAN Coverage Mapping and GNSS Positioning Quality Assessment", *Applied Sciences* (MDPI), 2026. *Manuscript in preparation; the DOI will be added on publication.*
 
 <p align="justify">
 It contains everything needed to inspect, reproduce and extend the work: the firmware and network-server payload decoder, the 3D-printable parts, and the six field-campaign datasets.

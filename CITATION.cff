@@ -37,7 +37,7 @@ authors:
     given-names: Ruber
     orcid: "https://orcid.org/0000-0002-9311-1193"
     affiliation: "Universidad Católica del Maule, Talca, Chile"
-  - family-names: Gutiérrez-Calderon
+  - family-names: Gutiérrez
     given-names: Sebastián
     orcid: "https://orcid.org/0000-0002-9622-4521"
     affiliation: "Tecnun, University of Navarra, San Sebastián, Spain"
@@ -64,7 +64,7 @@ preferred-citation:
       given-names: Lucas
     - family-names: Hernández-García
       given-names: Ruber
-    - family-names: Gutiérrez-Calderon
+    - family-names: Gutiérrez
       given-names: Sebastián
     - family-names: Del-Valle-Soto
       given-names: Carolina
